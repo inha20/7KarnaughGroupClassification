@@ -55,7 +55,8 @@ Karnaugh map, Boolean function space, variable arrangement equivalence, symmetri
 ├─ index.html                              ← 대화형 웹 논문 포털 (KaTeX)
 ├─ paper/
 │  ├─ KarnaughGroupClassification.md     ← 논문 전문
-│  └─ 01_KarnaughGroupClassification.pdf ← 논문 PDF (원고에서 생성)
+│  ├─ 01_KarnaughGroupClassification.pdf ← 논문 PDF (원고에서 생성)
+│  └─ GeneralizationNote.md              ← (보충) n변수 일반화 노트. 원고와 별개이며 원고는 수정하지 않았다
 ├─ images/                                 ← 논문 그림 21장 (출처·검증: images/README.md)
 └─ scripts/                                ← 본문 수치를 검증하는 Python 스크립트 (표준 라이브러리만 사용)
    ├─ verify_orbits.py                     ← S4 궤도 수 (열거 + Burnside)
@@ -68,7 +69,8 @@ Karnaugh map, Boolean function space, variable arrangement equivalence, symmetri
    ├─ verify_monotone_fix.py               ← 단조 Fix 값 = 궤도 순서집합의 상집합 수 (168, 50, 28, 15, 8)
    ├─ verify_stabilizer_counts.py          ← 뫼비우스(단조 궤도 크기 분포)와 포함·배제(그림 종류별 함수 3,220 / 36,204 / 26,112)
    ├─ verify_figures.py                    ← images/ 그림의 격자 값이 본문의 함수·배치·축 순서와 일치하는지 대조
-   └─ verify_clone_generators.py           ← 아핀·단조·자기쌍대 함수의 생성 연산(XOR과 상수 1 / AND, OR와 상수 / NOT과 다수결) 확인
+   ├─ verify_clone_generators.py           ← 아핀·단조·자기쌍대 함수의 생성 연산(XOR과 상수 1 / AND, OR와 상수 / NOT과 다수결) 확인
+   └─ verify_general_n.py                  ← (보충) n=2~6 일반화: 격자군, 정리 5의 일반화, 궤도 수, 8×8 모델의 붕괴 (paper/GeneralizationNote.md의 수치)
 ```
 
 각 스크립트는 `python scripts/<이름>.py`로 실행한다.
