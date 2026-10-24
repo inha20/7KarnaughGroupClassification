@@ -32,13 +32,14 @@
   - $n=7$까지는 Liu–Hu(1985–86)에도 있고, Pawelski($n=8$: 2021, $n=9$: 2023)와 Carić–Živković($n=8$: 2022)로 지금은 $n=9$까지 알려져 있다. 서지는 [Pawelski](https://arxiv.org/pdf/2305.06346)와 [Biswas–Sarkar (JIS 2025)](https://cs.uwaterloo.ca/journals/JIS/VOL28/Biswas/biswas6.pdf)의 참고문헌에서 따온다.
 
 - [ ] **`[보완]` 누락 문헌 검토·추가**
-  - OEIS가 [A000616](https://oeis.org/A000616), A057132, A001531에서 출처로 드는 문헌 중 현재 참고문헌에 없는 것:
+  - OEIS가 [A000616](https://oeis.org/A000616), A057132, A001531에서 드는 문헌 중, 제목으로 보아 이 논문의 주제(NP·자기쌍대 유형 수의 계수)와 관련이 큰 것만 골랐다. 모두 현재 참고문헌에 없다:
     - Knuth, *The Art of Computer Programming*, Vol. 4A, §7.1.1, p. 79 (세 수열 모두)
     - Toda, I. (1962). On the number of types of self-dual logical functions. *IEEE Trans. Electron. Comput.*, 11, 282–284
     - Elspas, B. (1960). Self-complementary symmetry types of Boolean functions. *IEEE Trans. Electron. Comput.*, EC-9, 264–266
     - Harrison, M. A. (1963). The number of transitivity sets of Boolean functions. *J. Soc. Indust. Appl. Math.*, 11, 806–828 (현재 12번의 Harrison 1963, IEEE EC-12와는 다른 논문)
     - Muroga, S. (1971). *Threshold Logic and Its Applications*. Wiley, p. 38, Table 2.3.2
     - Palmer, E. M., & Robinson, R. W. (1984). Enumeration of self-dual configurations. *Pacific J. Math.*, 110, 203–221
+  - 선별한 목록이며 빠짐없는 목록이 아니다. 같은 OEIS 항목은 Sloane의 수열 편람(1973)과 Sloane–Plouffe(1995), Harary–Palmer (1973), Harrison (1965, 교재), Tomescu (1972), Sklansky (1963), Muroga–Tsuboi–Baugh (1970) 등도 드는데, 관련도를 따지지 않아 위 목록에 넣지 않았다.
   - OEIS의 서지만 보고 정리했고 원문은 읽지 않았다. 인용 전에 원문에서 내용(특히 4변수 값)을 확인한다.
 
 - [ ] **`[보완]` 아핀 궤도 수 서술**
