@@ -492,7 +492,7 @@ $$\Bigl|\bigcup_i \mathrm{Fix}(C_i)\Bigr| = \sum_{\varnothing \ne S \subseteq [m
 
 **예 (시각적 대칭).** $f = m(5,6,9,10)$은 $F(A,B,C,D) = F(C,D,A,B)$를 만족하고 $|\mathrm{Stab}_W(f)| = 32$이다. $f = m(1,4,7,11,13,14)$는 $F(A,B,C,D) = F(\neg C, D, \neg A, B)$도 만족하며, 이는 전치와 두 반사의 합성인 $W$의 원소이다 ($|\mathrm{Stab}_W(f)| = 4$).
 
-배치에 따라 그림이 달라지는 예는 다음과 같다. 그림 8은 $f = m(5,6,9,10) = (A \oplus B)(C \oplus D)$의 세 대표 배치에서의 그림이다. $AC/BD$와 $AD/BC$의 그림은 같고 $AB/CD$의 그림만 다르므로 그림 종류는 2이고, $|\mathrm{Stab}_W(f)| = 32$이다. 그림 9는 $f = m(0,6,9,15) = \overline{A \oplus D}\thickspace\overline{B \oplus C}$의 그림이며, $AB/CD$와 $AC/BD$의 그림이 같고 $AD/BC$만 다르다 (그림 종류 2, $|\mathrm{Stab}_W(f)| = 16$).
+배치에 따라 그림이 달라지는 예는 다음과 같다. 그림 8은 $f = m(5,6,9,10) = (A \oplus B)(C \oplus D)$의 세 대표 배치에서의 그림이다. $AC/BD$와 $AD/BC$의 그림은 같고 $AB/CD$의 그림만 다르므로 그림 종류는 2이고, $|\mathrm{Stab}_W(f)| = 32$이다. 그림 9는 $f = m(0,6,9,15) = \overline{A \oplus D}\mkern5mu\overline{B \oplus C}$의 그림이며, $AB/CD$와 $AC/BD$의 그림이 같고 $AD/BC$만 다르다 (그림 종류 2, $|\mathrm{Stab}_W(f)| = 16$).
 
 | $AB/CD$ | $AC/BD$ | $AD/BC$ |
 |:---:|:---:|:---:|
