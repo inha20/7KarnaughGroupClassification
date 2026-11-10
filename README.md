@@ -1,5 +1,6 @@
 # 7KarnaughGroupClassification
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24097841.svg)](https://doi.org/10.5281/zenodo.24097841)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-blue?style=flat-square&logo=github)](https://inha20.github.io/7KarnaughGroupClassification/)
 [![Field](https://img.shields.io/badge/Field-Group%20Theory%20%7C%20Boolean%20Algebra-purple?style=flat-square)](https://inha20.github.io/7KarnaughGroupClassification/)
 **논문 제목:** 카르노맵 위의 4변수 부울 함수 공간의 군론적 분류  
@@ -94,9 +95,10 @@ Karnaugh map, Boolean function space, variable arrangement equivalence, symmetri
 @misc{choi2026karnaughgroupclassification,
   author       = {Choi, Jonghun},
   title        = {Group-Theoretic Classification of 4-Variable Boolean Function Spaces on Karnaugh Maps},
-  howpublished = {Independent Mathematics Research Program Preprint},
-  year      = {2026},
-  url       = {https://github.com/inha20/7KarnaughGroupClassification}
+  howpublished = {Zenodo Preprint},
+  year         = {2026},
+  doi          = {10.5281/zenodo.24097841},
+  url          = {https://doi.org/10.5281/zenodo.24097841}
 }
 ```
 
