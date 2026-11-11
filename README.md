@@ -56,9 +56,11 @@ Karnaugh map, Boolean function space, variable arrangement equivalence, symmetri
 ├─ index.html                              ← 대화형 웹 논문 포털 (KaTeX)
 ├─ paper/
 │  ├─ KarnaughGroupClassification.md     ← 논문 전문
-│  ├─ 01_KarnaughGroupClassification.pdf ← 논문 PDF (원고에서 생성)
+│  ├─ 01_KarnaughGroupClassification.pdf ← 논문 PDF (tools/build_pdf/로 원고에서 생성)
 │  └─ GeneralizationNote.md              ← (보충) n변수 일반화 노트. 원고와 별개이며 원고는 수정하지 않았다
 ├─ images/                                 ← 논문 그림 21장 (출처·검증: images/README.md)
+├─ tools/
+│  └─ build_pdf/                           ← 원고에서 논문 PDF를 만드는 스크립트 (외부 패키지 필요, 사용법: tools/build_pdf/README.md)
 └─ scripts/                                ← 본문 수치를 검증하는 Python 스크립트 (표준 라이브러리만 사용)
    ├─ verify_orbits.py                     ← S4 궤도 수 (열거 + Burnside)
    ├─ verify_tables.py                     ← Fix 표, 궤도 크기 분포, 안정화군 위수, 그림 비교
@@ -74,7 +76,7 @@ Karnaugh map, Boolean function space, variable arrangement equivalence, symmetri
    └─ verify_general_n.py                  ← (보충) n=2~6 일반화: 격자군, 정리 5의 일반화, 궤도 수, 8×8 모델의 붕괴 (paper/GeneralizationNote.md의 수치)
 ```
 
-각 스크립트는 `python scripts/<이름>.py`로 실행한다.
+각 스크립트는 `python scripts/<이름>.py`로 실행한다. 논문 PDF는 `tools/build_pdf/`로 다시 만들 수 있다.
 
 ---
 

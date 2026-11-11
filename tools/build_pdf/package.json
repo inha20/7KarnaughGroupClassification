@@ -1,0 +1,10 @@
+{
+  "name": "karnaugh-pdf-build",
+  "private": true,
+  "description": "KaTeX and fonts used by build_pdf.py",
+  "dependencies": {
+    "@fontsource/noto-sans-kr": "5.3.1",
+    "@fontsource/noto-sans-mono": "5.3.0",
+    "katex": "0.19.1"
+  }
+}
