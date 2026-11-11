@@ -26,6 +26,7 @@ import pathlib
 import re
 import shutil
 import sys
+import tempfile
 
 from markdown_it import MarkdownIt
 from markdown_it.common.utils import escapeHtml
@@ -271,7 +272,7 @@ def main() -> int:
     ap.add_argument("base", nargs="?", default=str(REPO / "paper"),
                     help="relative image paths in the manuscript are resolved against this directory")
     ap.add_argument("out", nargs="?", default=str(REPO / "paper" / "01_KarnaughGroupClassification.pdf"))
-    ap.add_argument("--html")
+    ap.add_argument("--html", help="keep the intermediate HTML here (default: a temporary file that is deleted)")
     ap.add_argument("--top", default="22mm")
     ap.add_argument("--bottom", default="20mm")
     ap.add_argument("--footer-pad", default="0")
@@ -289,7 +290,14 @@ def main() -> int:
     base = pathlib.Path(a.base).resolve()
     body, lint = md_to_html(text)
     html_doc = build_html(body, base, {"FS": a.fs, "LH": a.lh, "LS": a.ls, "MATH": a.math})
-    html_path = (pathlib.Path(a.html) if a.html else pathlib.Path(a.out).with_suffix(".html")).resolve()
+    # Chrome has to load the page from disk. Unless --html is given, use a temporary file and delete it afterwards,
+    # so that no stray .html is left next to the PDF (css/js are absolute file URLs, images go through <base>).
+    tmp = None
+    if a.html:
+        html_path = pathlib.Path(a.html).resolve()
+    else:
+        tmp = tempfile.TemporaryDirectory(prefix="build_pdf_")
+        html_path = pathlib.Path(tmp.name) / "paper.html"
     html_path.write_text(html_doc, encoding="utf-8")
 
     console = []
@@ -337,6 +345,8 @@ def main() -> int:
             margin={"top": a.top, "bottom": a.bottom, "left": "22mm", "right": "22mm"},
         )
         br.close()
+    if tmp is not None:
+        tmp.cleanup()
 
     # metadata
     import pikepdf
