@@ -56,8 +56,7 @@ Karnaugh map, Boolean function space, variable arrangement equivalence, symmetri
 ├─ index.html                              ← 대화형 웹 논문 포털 (KaTeX)
 ├─ paper/
 │  ├─ KarnaughGroupClassification.md     ← 논문 전문
-│  ├─ 01_KarnaughGroupClassification.pdf ← 논문 PDF (tools/build_pdf/로 원고에서 생성)
-│  └─ GeneralizationNote.md              ← (보충) n변수 일반화 노트. 원고와 별개이며 원고는 수정하지 않았다
+│  └─ 01_KarnaughGroupClassification.pdf ← 논문 PDF (tools/build_pdf/로 원고에서 생성)
 ├─ images/                                 ← 논문 그림 21장 (출처·검증: images/README.md)
 ├─ tools/
 │  └─ build_pdf/                           ← 원고에서 논문 PDF를 만드는 스크립트 (외부 패키지 필요, 사용법: tools/build_pdf/README.md)
@@ -72,11 +71,12 @@ Karnaugh map, Boolean function space, variable arrangement equivalence, symmetri
    ├─ verify_monotone_fix.py               ← 단조 Fix 값 = 궤도 순서집합의 상집합 수 (168, 50, 28, 15, 8)
    ├─ verify_stabilizer_counts.py          ← 뫼비우스(단조 궤도 크기 분포)와 포함·배제(그림 종류별 함수 3,220 / 36,204 / 26,112)
    ├─ verify_figures.py                    ← images/ 그림의 격자 값이 본문의 함수·배치·축 순서와 일치하는지 대조
-   ├─ verify_clone_generators.py           ← 아핀·단조·자기쌍대 함수의 생성 연산(XOR과 상수 1 / AND, OR와 상수 / NOT과 다수결) 확인
-   └─ verify_general_n.py                  ← (보충) n=2~6 일반화: 격자군, 정리 5의 일반화, 궤도 수, 8×8 모델의 붕괴 (paper/GeneralizationNote.md의 수치)
+   └─ verify_clone_generators.py           ← 아핀·단조·자기쌍대 함수의 생성 연산(XOR과 상수 1 / AND, OR와 상수 / NOT과 다수결) 확인
 ```
 
 각 스크립트는 `python scripts/<이름>.py`로 실행한다. 논문 PDF는 `tools/build_pdf/`로 다시 만들 수 있다.
+
+보충 노트 세 편(`GeneralizationNote.md`, `TwoVariableMapIdea.md`, `LogicCircuitOptimizationExploration.md`)과 `scripts/verify_general_n.py`는 2026-11-12에 후속 연구(9번, 저장소 준비 중) 쪽으로 옮겼다. 이 저장소에서는 커밋 `f311763`까지의 이력에 남아 있다. `scripts/`에는 논문 1.4절의 표에 있는 스크립트 11개만 남는다.
 
 ---
 
