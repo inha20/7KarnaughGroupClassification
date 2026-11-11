@@ -96,9 +96,11 @@
 - **지표와 화환곱.** 부분군 $H \le G$의 지표는 $[G : H] = |G|/|H|$이다. 군 $A$와 $\mathbb{Z}_2$의 화환곱 $A \wr \mathbb{Z}_2$는 $A \times A$에 두 인자를 맞바꾸는 원소를 더한 군 $(A \times A) \rtimes \mathbb{Z}_2$이다.
 
 ### 2.4 번사이드 보조정리
-이 보조정리는 Burnside (1897)의 교재에 실려 그의 이름이 붙었으나, 그 이전에 Cauchy와 Frobenius가 알고 있었다 (Neumann, 1979). 유한군 $G$가 유한집합 $X$에 작용할 때 궤도의 수는
+이 보조정리는 Burnside (1897)의 교재에 실려 그의 이름이 붙었으나, 그 이전에 Cauchy와 Frobenius가 알고 있었다 (Neumann, 1979). 유한군 $G$가 유한집합 $X$에 작용할 때 궤도의 수는 다음과 같다.
+
 $$|X / G| = \frac{1}{|G|} \sum_{g \in G} |\mathrm{Fix}(g, X)|, \qquad \mathrm{Fix}(g, X) = \lbrace x \in X : g x = x\rbrace$$
-이다. $g$가 $\mathbb{Z}_2^4$의 16개 입력점에 일으키는 순환(cycle)의 개수를 $c(g)$라 하면, $g$로 불변인 함수는 각 순환 위에서 상수이므로 $|\mathrm{Fix}(g, \mathcal{F}_4)| = 2^{c(g)}$이다.
+
+$g$가 $\mathbb{Z}_2^4$의 16개 입력점에 일으키는 순환(cycle)의 개수를 $c(g)$라 하면, $g$로 불변인 함수는 각 순환 위에서 상수이므로 $|\mathrm{Fix}(g, \mathcal{F}_4)| = 2^{c(g)}$이다.
 
 ---
 
@@ -108,9 +110,11 @@ $$|X / G| = \frac{1}{|G|} \sum_{g \in G} |\mathrm{Fix}(g, X)|, \qquad \mathrm{Fi
 $24$가지의 배치 $\sigma$ 각각은 입력점을 셀로 보내는 전단사 $\Phi_\sigma: \mathbb Z_2^4 \to \lbrace 0,1,2,3\rbrace^2$를 정한다. 두 배치 $\sigma, \sigma'$에 대해 어떤 격자 대칭 $w$가 존재하여 $\Phi_{\sigma'} = w \circ \Phi_\sigma$이면 $\sigma$와 $\sigma'$를 **동치**라 한다. 이는 임의의 함수 $f$에 대해 두 배치에서의 그림이 격자 대칭으로 옮겨진다는 뜻이다. 격자 대칭의 군은 다음 절에서 정의한다.
 
 ### 3.2 격자 대칭군 $W$
-$\mathbb{Z}_4$ 위의 4-cycle(인덱스 $0, 1, 2, 3$이 원형으로 인접)의 자기동형군은 위수 8의 이면체군 $D_4(\mathbb{Z}_4) = \lbrace i \mapsto \pm i + k\rbrace$이다. 이를 행과 열에 독립적으로 적용하고 행과 열을 맞바꾸는 전치까지 허용한 군을
+$\mathbb{Z}_4$ 위의 4-cycle(인덱스 $0, 1, 2, 3$이 원형으로 인접)의 자기동형군은 위수 8의 이면체군 $D_4(\mathbb{Z}_4) = \lbrace i \mapsto \pm i + k\rbrace$이다. 이를 행과 열에 독립적으로 적용하고 행과 열을 맞바꾸는 전치까지 허용한 군을 $W$라 하면 다음과 같다.
+
 $$W = D_4(\mathbb{Z}_4) \wr \mathbb{Z}_2, \qquad |W| = 8 \cdot 8 \cdot 2 = 128$$
-이라 한다. 이는 격자의 회전·반사 8개(평면 대칭 $D_4^{\mathrm{grid}}$)와 토러스 이동 $\mathbb{Z}_4 \times \mathbb{Z}_4$ (16개)가 생성하는 군 $D_4^{\mathrm{grid}} \ltimes (\mathbb{Z}_4 \times \mathbb{Z}_4)$와 같다. 생성원이 모두 $W$의 원소이므로 이 군은 $W$의 부분군이고, 토러스 이동의 군이 정규부분군이며 평면 대칭과의 교집합이 자명하므로 위수는 $8 \cdot 16 = 128 = |W|$이다.
+
+$W$는 격자의 회전·반사 8개(평면 대칭 $D_4^{\mathrm{grid}}$)와 토러스 이동 $\mathbb{Z}_4 \times \mathbb{Z}_4$ (16개)가 생성하는 군 $D_4^{\mathrm{grid}} \ltimes (\mathbb{Z}_4 \times \mathbb{Z}_4)$와 같다. 생성원이 모두 $W$의 원소이므로 이 군은 $W$의 부분군이고, 토러스 이동의 군이 정규부분군이며 평면 대칭과의 교집합이 자명하므로 위수는 $8 \cdot 16 = 128 = |W|$이다.
 
 **보조정리 1 (Gray code 위의 대칭).** 인덱스 $i \mapsto i + 1$은 라벨 $(a, b) \mapsto (b, \neg a)$로, $i \mapsto 3 - i$는 $(a, b) \mapsto (\neg a, b)$로, $i \mapsto -i$는 $(a, b) \mapsto (b, a)$로 작용한다.
 
@@ -216,8 +220,10 @@ $f: \mathbb{Z}_2^4 \to \mathbb{Z}_2$가 모든 $\pi \in S_4$와 모든 $\mathbf{
 
 ### 4.2 레이어 분할
 해밍 무게(입력에서 1의 개수; Hamming, 1950) $w(\mathbf{x}) = \sum x_i \in \lbrace 0, 1, 2, 3, 4\rbrace$가 같은 두 입력점 사이에는 이를 옮기는 순열이 항상 존재한다. 따라서 $f \in \mathcal{S}_4$의 값은 $w$로만 결정되고, $f$는 레이어 벡터 $\mathbf{v}_f = (v_0, \dots, v_4) \in \mathbb{Z}_2^5$와 일대일 대응한다. 그러므로
-$$|\mathcal{S}_4| = 2^5 = 32$$
-이다. 입력점은 레이어 $L_k = \lbrace w(\mathbf{x}) = k\rbrace$ ($k = 0, \dots, 4$)로 분할되며 크기는 $\binom{4}{k} \in \lbrace 1, 4, 6, 4, 1\rbrace$이다.
+
+$$|\mathcal{S}_4| = 2^5 = 32.$$
+
+입력점은 레이어 $L_k = \lbrace w(\mathbf{x}) = k\rbrace$ ($k = 0, \dots, 4$)로 분할되며 크기는 $\binom{4}{k} \in \lbrace 1, 4, 6, 4, 1\rbrace$이다.
 
 | 레이어 | 해밍 무게 | 개수 | 민텀 | 카르노맵 위치 ($AB/CD$) |
 |:---:|:---:|:---:|:---|:---|
@@ -301,7 +307,14 @@ $S_4$는 순환 구조에 따라 5개의 켤레류로 나뉜다. 각 대표원�
 
 ### 5.2 전체 공간 $\mathcal{F}_4$
 2.4절에 의해 $|\mathrm{Fix}(g, \mathcal{F}_4)| = 2^{c(g)}$이다.
-$$|\mathcal{F}_4 / S_4| = \frac{1}{24}\big[1 \cdot 2^{16} + 6 \cdot 2^{12} + 3 \cdot 2^{10} + 8 \cdot 2^{8} + 6 \cdot 2^{6}\big] = \frac{65536 + 24576 + 3072 + 2048 + 384}{24} = \frac{95616}{24} = \mathbf{3{,}984}.$$
+
+$$
+\begin{aligned}
+|\mathcal{F}_4 / S_4| &= \frac{1}{24}\big[1 \cdot 2^{16} + 6 \cdot 2^{12} + 3 \cdot 2^{10} + 8 \cdot 2^{8} + 6 \cdot 2^{6}\big] \\
+&= \frac{65536 + 24576 + 3072 + 2048 + 384}{24} = \frac{95616}{24} = \mathbf{3{,}984}.
+\end{aligned}
+$$
+
 궤도의 크기 분포는 열거로 얻은 다음 표와 같다 (크기 × 궤도 수의 합 $32 + 96 + 896 + 1344 + 20160 + 43008 = 65536$, 궤도 수의 합 $32 + 32 + 224 + 224 + 1680 + 1792 = 3984$).
 
 | 궤도 크기 | 1 | 3 | 4 | 6 | 12 | 24 |
@@ -563,7 +576,7 @@ $$\Bigl|\bigcup_i \mathrm{Fix}(C_i)\Bigr| = \sum_{\varnothing \ne S \subseteq [m
 18. MacMahon, P. A. (1916). *Combinatory Analysis*, Vol. 2. Cambridge University Press.
 19. McCluskey, E. J. (1956). Minimization of Boolean functions. *Bell System Technical Journal*, 35, 1417–1444.
 20. Neumann, P. M. (1979). A lemma that is not Burnside's. *The Mathematical Scientist*, 4, 133–141.
-21. The On-Line Encyclopedia of Integer Sequences (OEIS). A000616 (NP-equivalence classes of Boolean functions), A000370 (NPN), A003180 (classes under the symmetric group $S_n$), A003182 (inequivalent monotone Boolean functions), A001206 (self-dual monotone functions), A057132 (self-dual functions, classes under the symmetric group $S_n$), A001531 (self-dual functions, classes under complementation and permutation of the variables; the index is shifted by one, so the value for $k$ variables is $a(k-1)$). https://oeis.org
+21. The On-Line Encyclopedia of Integer Sequences (OEIS). A000616 (NP-equivalence classes of Boolean functions), A000370 (NPN), A003180 (classes under the symmetric group $S_n$), A003182 (inequivalent monotone Boolean functions), A001206 (self-dual monotone functions), A057132 (self-dual functions, classes under the symmetric group $S_n$), A001531 (self-dual functions, classes under complementation and permutation of the variables; the index is shifted by one, so the value for $k$ variables is $a(k-1){}$)<!-- {} is deliberate: GitHub does not render inline math that ends in a closing parenthesis when another closing parenthesis follows it -->. https://oeis.org
 22. Pawelski, B. (2024). On the number of inequivalent monotone Boolean functions of 9 variables. *IEEE Transactions on Information Theory*, 70(7), 5358–5364. https://doi.org/10.1109/TIT.2024.3379594
 23. Pólya, G. (1937). Kombinatorische Anzahlbestimmungen für Gruppen, Graphen und chemische Verbindungen. *Acta Mathematica*, 68, 145–254.
 24. Post, E. L. (1941). *The Two-Valued Iterative Systems of Mathematical Logic*. Annals of Mathematics Studies, No. 5, Princeton University Press.
