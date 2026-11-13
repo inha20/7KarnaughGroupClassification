@@ -86,7 +86,7 @@ Karnaugh map, Boolean function space, variable arrangement equivalence, symmetri
 
 | 저장소 | 내용 |
 |:---|:---|
-| [Research-Portfolio](https://github.com/inha20/Research-Portfolio) | 전체 연구 프로그램 포털 |
+| [Research-Portfolio](https://inha20.github.io/Research-Portfolio/) | 전체 연구 프로그램 포털 (웹사이트) |
 | [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory) | 이 논문보다 먼저 쓰인 이전 노트(보관 상태). $S_4$ 궤도 결과(3,984 · 아핀 10 · 단조 30 · 자기쌍대 32)가 먼저 정리된 곳이다. 내용은 이 논문과 8번 논문으로 정리·정정되었으므로 인용은 7·8번을 사용해 주세요 |
 | [8StructuralThinkingAndHumanAICollaboration](https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration) | 구조적 사고와 인간-AI 연구 협력 (자매 논문. 이 논문의 작성 과정을 사례로 다룬다, 8번 논문 4.7절) |
 
