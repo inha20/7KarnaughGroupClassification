@@ -7,6 +7,7 @@
 **Title:** Group-Theoretic Classification of 4-Variable Boolean Function Spaces on Karnaugh Maps  
 **저자:** 최종훈 (Jonghun Choi) — 인하공업전문대학 2학년 재학 · 독립 연구자  
 **GitHub Pages:** [웹 논문 및 대화형 분석 포털 보기](https://inha20.github.io/7KarnaughGroupClassification/)  
+**강의:** [S₄ 궤도 분류 강의 — 5분 안팎의 발표 20개](https://inha20.github.io/7KarnaughGroupClassification/lecture/)  
 
 > 이 저장소의 논문은 필요한 정의와 증명을 본문에 싣는 것을 목표로 하며, 같은 저자의 다른 저장소를 읽지 않아도 따라갈 수 있게 썼습니다. 필요한 배경은 군론의 기초(군의 작용, 부분군의 지표, 반직접곱, 켤레류)와 Burnside 보조정리입니다. 일부 수치는 컴퓨터로 수행한 유한 계산이며 스크립트로 재현합니다.
 
@@ -54,6 +55,7 @@ Karnaugh map, Boolean function space, variable arrangement equivalence, symmetri
 ├─ README.md                               ← 저장소 안내 (본 문서)
 ├─ LICENSE                                 ← 이용 조건 (All rights reserved)
 ├─ index.html                              ← 대화형 웹 논문 포털 (KaTeX)
+├─ lecture/                                ← 논문 5장 중심 강의: 5분 안팎의 발표 20개(웹)와 PPT 40장 (안내: lecture/README.md)
 ├─ paper/
 │  ├─ KarnaughGroupClassification.md     ← 논문 전문
 │  └─ 01_KarnaughGroupClassification.pdf ← 논문 PDF (tools/build_pdf/로 원고에서 생성)
@@ -86,7 +88,7 @@ Karnaugh map, Boolean function space, variable arrangement equivalence, symmetri
 
 | 저장소 | 내용 |
 |:---|:---|
-| [Research-Portfolio](https://github.com/inha20/Research-Portfolio) | 전체 연구 프로그램 포털 |
+| [Research-Portfolio](https://inha20.github.io/Research-Portfolio/) | 전체 연구 프로그램 포털 (웹사이트) |
 | [6BooleanFunctionSpaceTheory](https://github.com/inha20/6BooleanFunctionSpaceTheory) | 이 논문보다 먼저 쓰인 이전 노트(보관 상태). $S_4$ 궤도 결과(3,984 · 아핀 10 · 단조 30 · 자기쌍대 32)가 먼저 정리된 곳이다. 내용은 이 논문과 8번 논문으로 정리·정정되었으므로 인용은 7·8번을 사용해 주세요 |
 | [8StructuralThinkingAndHumanAICollaboration](https://github.com/inha20/8StructuralThinkingAndHumanAICollaboration) | 구조적 사고와 인간-AI 연구 협력 (자매 논문. 이 논문의 작성 과정을 사례로 다룬다, 8번 논문 4.7절) |
 
